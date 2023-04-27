@@ -212,7 +212,7 @@ if __name__ == "__main__":
             speak("Which Country's Information ?")
             def TakeCommand():
                 r = sr.Recognizer()
-                with sr.Microphone() as source:
+                with sr.Microphone() as source: 
                     print(": Listening....")
                     r.pause_threshold = 1
                     audio = r.listen(source)
