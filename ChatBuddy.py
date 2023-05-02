@@ -1,4 +1,4 @@
-import pyttsx3, random, sys, webbrowser, pafy, wikipedia, requests, pyautogui, os  
+import pyttsx3, random, sys, webbrowser, wikipedia, requests, pyautogui, os  
 from urllib.request import urlopen
 import pyjokes as pj
 from bs4 import BeautifulSoup as bs
@@ -207,7 +207,7 @@ if __name__ == "__main__":
             OnlineClasses(Class)
 
         #Covid Cases
-        elif 'covid cases' in query or 'corona cases' in query or 'cases of corona' in query:
+        elif 'covid cases' in query or 'corona cases' in query or 'cases of corona' in query or 'corona' in query:
             from Features.Covid import CoronaVirus
             speak("Which Country's Information ?")
             def TakeCommand():
